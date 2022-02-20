@@ -4,6 +4,7 @@
 using namespace std;
 
 int n=33,m=3;
+// dp[i][mask] = total # of ways to fill the prefix making i-1 a "perfect" subgrid and mask being the last-put dominoes "heads"
 vector< vector<long long> > dp(n, vector<long long>(1<<m));
 
 void calc(int pos, int bit, int mask, int next_mask){
