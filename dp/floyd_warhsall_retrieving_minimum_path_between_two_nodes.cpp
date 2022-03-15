@@ -21,7 +21,7 @@ int main(){
 	for (int i=0; i<n; i++){
 		adj[i][i]=dp[i][i]=0;
 		for (int j=0; j<n; j++){
-			lastmodif[i][j]=-2;                     // never modidified
+			lastmodif[i][j]=-2;                     // never modified
 			if (j==i) continue;
 			dp[i][j]=adj[i][j]=INF;
 		}
