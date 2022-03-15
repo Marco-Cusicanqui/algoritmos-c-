@@ -8,7 +8,7 @@ const int INF = 1000000000;
 const int NAX = 300;
 int adj[NAX][NAX], dp[NAX][NAX], lastmodif[NAX][NAX];
 
-void getCam(int u, int v){
+void getCam(int u, int v){                               // function that prints the path [u, v)
 	if (lastmodif[u][v]==-1) cout<<u+1<<' ';
 	else{
 		getCam(u,lastmodif[u][v]);
