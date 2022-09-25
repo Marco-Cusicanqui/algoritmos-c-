@@ -45,8 +45,6 @@ pt unit(pt p) {return {p.x/Abs(p), p.y/Abs(p)};}
 int main(){
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	pt A(1,2), B(1,2.0000000001);
-	cout<<(A!=B)<<endl;
 
 	return 0;
 }
