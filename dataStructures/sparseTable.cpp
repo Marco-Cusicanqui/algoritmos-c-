@@ -20,13 +20,14 @@ int main(){
   ios::sync_with_stdio(0);
   cin.tie(0);
   
-  // array de prueba b:
+  // test array b:
   int n; cin>>n;
   vector<int> b(n);
   for (int &x:b) cin>>x;
   
+  // sparse table:
   int LOG = log2(n)+2;
-	vector<vector<int> > arr(n,vector<int>(LOG)); // sparse table
+	vector<vector<int> > arr(n,vector<int>(LOG)); // table
 	for (int i=0; i<n; i++){
 		arr[i][0]=b[i]; // jump 2^0
 	}
