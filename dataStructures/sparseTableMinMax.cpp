@@ -25,7 +25,7 @@ int main(){
   vector<int> b(n);
   for (int &x:b) cin>>x;
   
-  // sparse table:
+  // sparse table: dp idea (when preprocessing)
   int LOG = log2(n)+2;
 	vector<vector<int> > arr(n,vector<int>(LOG)); // table
 	for (int i=0; i<n; i++){
