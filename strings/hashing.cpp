@@ -55,7 +55,7 @@ ll getHashPos(int l, int r, int mo){
 	return res;
 }
 
-pair<ll,ll> getHash(int l, int r){ // from l to r inclusive [l,r]
+pair<ll,ll> query(int l, int r){ // from l to r inclusive [l,r]
 	return pair<ll,ll>(getHashPos(l,r,0), getHashPos(l,r,1)); // (MOD,mod)
 }
 
@@ -64,10 +64,10 @@ int main(){
 	cin.tie(0);
 
 	// read data:
-	int n; cin>>n;
+	int n; cin>>n; // n = strlen(s)
 	string s; cin>>s;
 	
-  // hashing preprocessing:
+	//
 	pre(n,s);
 	
 	return 0;
