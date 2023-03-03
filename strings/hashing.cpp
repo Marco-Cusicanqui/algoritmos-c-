@@ -29,8 +29,8 @@ ll power(ll b, ll ex, int mo){
 }
 
 void pre(int n, string s){
-	invmod[0]=power(ba,modus[0]-2,modus[0]);
-	invmod[1]=power(ba,modus[1]-2,modus[1]);
+	invmod[0]=power(ba,modus[0]-2,0);
+	invmod[1]=power(ba,modus[1]-2,1);
 	
 	for (int i=0; i<2; i++) ha[i].resize(n);
 	for (int i=0; i<2; i++) pw[i].resize(n),invpow[i].resize(n);
