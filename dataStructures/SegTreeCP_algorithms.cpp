@@ -1,3 +1,4 @@
+// cool submission with lazy and BS in ST: https://codeforces.com/contest/1838/submission/208644188
 #include <bits/stdc++.h>
 using namespace std;
 
