@@ -74,7 +74,7 @@ int main(){ // I'll become Candidate Master
 	vector<ll> ha1[2], ha2[2];
 	string sr=s;
 	reverse(sr.begin(),sr.end());
-	pre(s.size(),s,ha1); pre(s.size(),sr,ha2);
+	pre(s.size(),s,ha1); pre(sr.size(),sr,ha2);
 
   return 0;
 }
