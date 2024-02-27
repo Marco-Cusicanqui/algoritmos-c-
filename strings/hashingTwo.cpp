@@ -71,10 +71,10 @@ int main(){ // I'll become Candidate Master
   
 	string s; cin>>s;
 	Base(s.size());
-	vector<ll> ha1[2], ha2[2];
-	string sr=s;
-	reverse(sr.begin(),sr.end());
-	pre(s.size(),s,ha1); pre(sr.size(),sr,ha2);
+	vector<ll> ha1[2]; //, ha2[2];
+	//string sr=s;
+	//reverse(sr.begin(),sr.end());
+	pre(s.size(),s,ha1); //pre(sr.size(),sr,ha2);
 
   return 0;
 }
